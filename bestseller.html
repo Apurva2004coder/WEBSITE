@@ -4,13 +4,556 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+     <style>
+        
+    /* .d1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    margin: 20px;
+}
+.card {
+    width: 250px;
+    height: fit-content;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+.price {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;   
+}
+
+.d1{
+    padding-top: 90px;
+} */
+.section-title{
+    margin:110px 30px 20px;
+    font-size:34px;
+    color:#d63384;
+    font-weight:bold;
+}
+
+.d1{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    margin-bottom:60px;
+}
+
+.card{
+    width:280px;
+    height:520px;
+    border-radius:15px;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.price{
+    display:flex;
+    gap:15px;
+    margin:10px 0;
+}
+
+.card button{
+    width:100%;
+}
+
+     </style>
 </head>
-<body>
-    <nav>
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-</nav>
+<body style="background-color: rgb(245,212,229);">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🌸 Skin Store</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="bestseller.html">Bestseller</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </nav>
+
+    <!-- Bestseller -->
+    <section class="category">
+        <h2 class="section-title">🔥 Bestseller Combos</h2>
+
+        <div class="d1">
+
+            <div class="card">
+                <img src="images/card1.jpg" alt="Mipxon Combo">
+                <h5>Mipxon Skincare Combo</h5>
+                <p class="price">
+                    <del>₹1999</del><br>
+                    <strong>₹999 Only</strong>
+                </p>
+                <button class="btn btn-primary w-100">Buy Now</button>
+            </div>
+
+            <div class="card">
+                <img src="images/card18.jpg" alt="Misron Combo">
+                <h5>Misron Skin Combo</h5>
+                <p class="price">
+                    <del>₹2999</del><br>
+                    <strong>₹1999 Only</strong>
+                </p>
+                <button class="btn btn-primary w-100">Buy Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Lip Balms -->
+    <section class="category">
+        <h2 class="section-title">💄 Lip Balms</h2>
+
+        <div class="d1">
+
+            <div class="card">
+                <img src="images/card2.jpg" alt="Sheglam Lip Gloss">
+                <h5>Sheglam Lip Gloss</h5>
+                <p class="price">
+                    <del>₹999</del><br>
+                    <strong>₹499 Only</strong>
+                </p>
+                <button class="btn btn-primary w-100">Buy Now</button>
+            </div>
+
+            <div class="card">
+                <img src="images/card13.jpg" alt="Laneige Lip Mask">
+                <h5>Laneige Lip Mask</h5>
+                <p class="price">
+                    <del>₹899</del><br>
+                    <strong>₹599 Only</strong>
+                </p>
+                <button class="btn btn-primary w-100">Buy Now</button>
+            </div>
+
+            <div class="card">
+                <img src="images/card14.jpg" alt="Laneige Lip Balm">
+                <h5>Laneige Lip Balm</h5>
+                <p class="price">
+                    <del>₹799</del><br>
+                    <strong>₹499 Only</strong>
+                </p>
+                <button class="btn btn-primary w-100">Buy Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Serums -->
+    <section class="category">
+        <h2 class="section-title">✨ Serums</h2>
+
+        <div class="d1">
+
+            <div class="card">
+                <img src="images/card4.jpg" alt="Sebeam Face Serum">
+                <h5>Sebeam Face Serum</h5>
+                <p class="price">
+                    <del>₹899</del><br>
+                    <strong>₹599 Only</strong>
+                </p>
+                <button class="btn btn-primary w-100">Buy Now</button>
+            </div>
+
+            <div class="card">
+                <img src="images/card7.jpg" alt="Medicube Collagen Cream">
+                <h5>Medicube Collagen Cream</h5>
+                <p class="price">
+                    <del>₹799</del><br>
+                    <strong>₹599 Only</strong>
+                </p>
+                <button class="btn btn-primary w-100">Buy Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Cleansers -->
+    <section class="category">
+        <h2 class="section-title">🫧 Cleansers</h2>
+
+        <div class="d1">
+
+            <div class="card">
+                <img src="images/card20.jpg" alt="Centella Cleanser">
+                <h5>Centella Cleanser</h5>
+                <p class="price">
+                    <del>₹799</del><br>
+                    <strong>₹699 Only</strong>
+                </p>
+                <button class="btn btn-primary w-100">Buy Now</button>
+            </div>
+
+            <div class="card">
+                <img src="images/card17.jpg" alt="Byoma Cleanser">
+                <h5>Byoma Cleanser</h5>
+                <p class="price">
+                    <del>₹599</del><br>
+                    <strong>₹399 Only</strong>
+                </p>
+                <button class="btn btn-primary w-100">Buy Now</button>
+            </div>
+
+            <div class="card">
+                <img src="images/card15.jpg" alt="Arencia Cleanser">
+                <h5>Arencia Cleanser</h5>
+                <p class="price">
+                    <del>₹599</del><br>
+                    <strong>₹399 Only</strong>
+                </p>
+                <button class="btn btn-primary w-100">Buy Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Toners -->
+    <section class="category">
+        <h2 class="section-title">💧 Toners</h2>
+
+        <div class="d1">
+
+            <div class="card">
+                <img src="images/card3.jpg" alt="Glow Recipe Toner">
+                <h5>Glow Recipe Toner</h5>
+                <p class="price">
+                    <del>₹599</del><br>
+                    <strong>₹399 Only</strong>
+                </p>
+                <button class="btn btn-primary w-100">Buy Now</button>
+            </div>
+
+            <div class="card">
+                <img src="images/card16.jpg" alt="Toner Pads">
+                <h5>Toner Pads</h5>
+                <p class="price">
+                    <del>₹1099</del><br>
+                    <strong>₹899 Only</strong>
+                </p>
+                <button class="btn btn-primary w-100">Buy Now</button>
+            </div>
+
+            <div class="card">
+                <img src="images/card19.jpg" alt="Anua Toner">
+                <h5>Anua Toner</h5>
+                <p class="price">
+                    <del>₹799</del><br>
+                    <strong>₹599 Only</strong>
+                </p>
+                <button class="btn btn-primary w-100">Buy Now</button>
+            </div>
+
+        </div>
+    </section>
+
 </body>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <body style="background-color: rgb(245, 212, 229);">
+<nav class="navbar">
+    <div class="logo">
+        🌸 Skin Store
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="bestseller.html">Bestseller</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-icons">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="#"><i class="fa-solid fa-user"></i></a>
+    </div>
+</nav>
+<h2 class="section-title">🔥 Bestseller Combos</h2>
+ <div class="d1">
+
+ <div class="card">
+            <img src="images/card1.jpg" width="100%">Mipxon skincare combo
+            <p class="price">Price : 1999/-
+               <br>
+               GET IT FOR 999/- only
+              </p>
+                <button>Buy Now</button>
+           </div>
+<div class="card">
+    
+            <img src="images/card18.jpg" width="100%"> MISRON SKIN COMBO
+             <p class="price">Price : 2999/-
+               <br>
+               GET IT FOR 1999/- only
+               </p>
+                <button>Buy Now</button>
+            </p>
+        </div>
+</div>
+
+    <h2 class="section-title">💄 Lip Balms</h2>
+    <div class="d1">
+            <img src="images/card2.jpg" width="100%">SHEGLAM Lipgloss
+          <p class="price">Price : 999/-
+               <br>
+               GET IT FOR 499/- only
+               </p>
+               
+               <button>Buy Now</button>
+        </div>
+<div class="card">
+            <img src="images/card13.jpg" width="100%">LANEIGE LIP MASK
+             <p class="price">Price : 899/-
+               <br>
+               GET IT FOR 599/- only
+               </p>
+                <button>Buy Now</button>
+            </p>
+        </div>
+       <div class="card">
+            <img src="images/card14.jpg" width="100%">LANEIGE LIP BALM
+             <p class="price">Price : 799/-
+               <br>
+               GET IT FOR 499/- only
+               </p>
+                <button>Buy Now</button>
+            </p>
+        </div>
+    </div>
+    </div>
+<h2 class="section-title">Serums</h2>
+<div class="d1">
+            <img src="images/card4.jpg" width="100%">SEBEAM FACE SERUM
+            <p class="price">Price : 899/-
+               <br>
+               GET IT FOR 599/- only
+               </p>
+                <button>Buy Now</button>
+            </p>
+        </div>
+<div class="card">
+            <img src="images/card7.jpg" width="100%"> MEDICUBE  COLLAGEN CREAM
+            <p class="price">Price : 799/-
+               <br>
+               GET IT FOR 599/- only
+               </p>
+                <button>Buy Now</button>
+            </p>
+        </div>
+    </div>
+</div>
+
+<h2 class="section-title">🧴 Cleansers</h2>
+         <div class="d1">
+            <img src="images/card20.jpg" width="100%"> CENTELLA CLEANSER
+             <p class="price">Price : 799/-
+               <br>
+               GET IT FOR 699/- only
+               </p>
+                <button>Buy Now</button>
+            </p>
+        </div> 
+        <div class="card">
+            <img src="images/card17.jpg" width="100%"> BYOMA CLEANSER
+             <p class="price">Price : 599/-
+               <br>
+               GET IT FOR 399/- only
+               </p>
+                <button>Buy Now</button>
+            </p>
+        </div> 
+        <div class="card">
+            <img src="images/card15.jpg" width="100%">ARENCIA CLEANSER
+             <p class="price">Price : 599/-
+               <br>
+               GET IT FOR 399/- only
+               </p>
+                <button>Buy Now</button>
+            </p>
+        </div>
+       </div>
+
+        <h2 class="section-title"> 💧 Toners</h2>
+       <div class="d1">
+            <img src="images/card3.jpg" width="100%"> GLOW RECIP TONER
+            <p class="price">Price : 599/-
+               <br>
+               GET IT FOR 399/- only
+               </p>
+                <button>Buy Now</button>
+            </p>
+        </div> 
+        <div class="card">
+            <img src="images/card16.jpg" width="100%">TONER PADS
+             <p class="price">Price : 1099/-
+               <br>
+               GET IT FOR 899/- only
+               </p>
+                <button>Buy Now</button>
+            </p>
+        </div> 
+        <div class="card">
+            <img src="images/card19.jpg" width="100%">ANNUA TONER
+             <p class="price">Price : 799/-
+               <br>
+               GET IT FOR 599/- only
+               </p>
+                <button>Buy Now</button>
+            </p>
+        </div>
+    <div>
+</div>
+</body>
+</html> -->
